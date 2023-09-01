@@ -175,7 +175,7 @@ class HelpSection extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            Text("Copyright  (c) 2023 Malik Sadaqat"),
+            Text("Copyright (c) 2023 Malik Sadaqat"),
             Text("All rights reserved"),
           ],
         ),
