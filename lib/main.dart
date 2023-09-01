@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: HelpSection(),
   ));
 }
@@ -19,8 +20,8 @@ class HelpSection extends StatelessWidget {
           backgroundColor: Colors.white,
           elevation: 0,
           title: Text(
-            "Help Section",
-            style: TextStyle(color: Colors.yellow),
+            "Help Section.",
+            style: TextStyle(color: Color.fromRGBO(232, 206, 10, 1)),
           ),
         ),
         body: Column(
@@ -38,9 +39,12 @@ class HelpSection extends StatelessWidget {
               height: 20,
             ),
             Text(
-              "Have any query or issue?\nFeel free to contact us",
+              "Have any query or issue?\nWe are here for you.",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20, color: Colors.grey[800]),
+            ),
+            SizedBox(
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -50,7 +54,16 @@ class HelpSection extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            blurRadius: 10,
+                            offset: Offset(0, 10),
+                          ),
+                        ]),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -70,7 +83,16 @@ class HelpSection extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            blurRadius: 10,
+                            offset: Offset(0, 10),
+                          )
+                        ]),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -79,7 +101,7 @@ class HelpSection extends StatelessWidget {
                           color: Colors.orange,
                           size: 50,
                         ),
-                        Text("Write to us."),
+                        Text("Call Us"),
                         Text("help@gmail.com")
                       ],
                     ),
@@ -95,7 +117,16 @@ class HelpSection extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            blurRadius: 10,
+                            offset: Offset(0, 10),
+                          )
+                        ]),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -104,7 +135,7 @@ class HelpSection extends StatelessWidget {
                           color: Colors.orange,
                           size: 50,
                         ),
-                        Text("Write to us."),
+                        Text("Contact Us"),
                         Text("help@gmail.com")
                       ],
                     ),
@@ -115,7 +146,16 @@ class HelpSection extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.grey,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            blurRadius: 10,
+                            offset: Offset(0, 10),
+                          )
+                        ]),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -124,7 +164,7 @@ class HelpSection extends StatelessWidget {
                           color: Colors.orange,
                           size: 50,
                         ),
-                        Text("Write to us."),
+                        Text("FAQs"),
                         Text("help@gmail.com")
                       ],
                     ),
@@ -132,6 +172,11 @@ class HelpSection extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(
+              height: 25,
+            ),
+            Text("Copyright  (c) 2023 Malik Sadaqat"),
+            Text("All rights reserved"),
           ],
         ),
       ),
